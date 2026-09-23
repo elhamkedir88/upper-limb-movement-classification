@@ -5,8 +5,8 @@
 > **Key Result:** Achieved **91.88% overall classification accuracy** using a 75-feature Cubic SVM.
 
 ###  Quick Links
-* 📄 **[Download Full Research Paper (PDF)](upper-limb-classification-paper.pdf)**
-* 📊 **[Download IISCC 2026 Slide Deck (PDF)](upper-limb-classification-slides.pdf)**
+* 📄 **[Download Full Research Paper (PDF)](IISCC2026_paper.pdf)**
+* 📊 **[Download IISCC 2026 Slide Deck (PDF)](IISCC2026_presentation.pdf)**
 ---
 
 ##  Project Overview

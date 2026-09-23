@@ -18,6 +18,22 @@ Rehabilitation tracking requires accurate, interpretable classification of multi
 3. **Feature Selection:** Applied **RUSBoost ensemble feature selection** to rank predictor importance and remove redundancy.
 4. **Classification Engine:** Evaluated performance using a **Cubic Polynomial Support Vector Machine (SVM)**.
 
+
+```mermaid
+graph TD
+    A[19-Channel IMU Sensor Data <br> Accel, Gyro, Quat, Euler] --> B[Kinematic Data Extraction & Cycle Segmentation]
+    B --> C[Combinatorial Sub-channel Grouping <br> Individual, Pairs, Triplets]
+    C --> D[DTW Medoid Distance Calculation <br> 3,477 Initial Features]
+    D --> E[RUSBoost Ensemble Feature Selection <br> Rank Importance & Prune Redundancy]
+    E --> F[75 Optimized Features]
+    F --> G[Cubic Polynomial SVM Classifier]
+    G --> H[Joint Movement Classification <br> 91.88% Overall Accuracy]
+    
+    style A fill:#f9f2f4,stroke:#333,stroke-width:2px
+    style E fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    style G fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style H fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+```
 ---
 
 ##  Key Results & Performance Metrics
